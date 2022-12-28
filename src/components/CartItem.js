@@ -6,6 +6,7 @@ const CartItem = ({ name, quantity, total, price, id }) => {
   const dispatch = useDispatch();
   const removeHandler = () => {
     dispatch(cartActions.removeFromCart(id));
+    console.log(id);
   };
   const addHandler = () => {
     dispatch(
